@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <HEAD>
+  <link href="/../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <TITLE>Cadastro</TITLE>
+  </HEAD>
+  <BODY>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            
+          <a class="navbar-brand" href="index.php">Project name</a>
+      </div>
+    </div>  
+</nav>
+  <div class="container">
+  	<FORM NAME="FORMCADASTRO" class="form-horizontal" ACTION="../controllers/validarCadastro.php" METHOD="POST">
+  	 <h1>Cadastro</h1>
+      <div class="form-group">
+        <div class="col-md-10">
+          <INPUT TYPE="TEXT" NAME="NOMECADASTRO" ID="NOMECADASTRO"  class="form-control" PLACEHOLDER="Digite seu nome" SIZE="30" MAXLENGTH="30" CLASS="form_text" REQUIRED   />
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-md-10">
+          <INPUT TYPE="PASSWORD" NAME="SENHACADASTRO" ID="SENHACADASTRO"  class="form-control" PLACEHOLDER="Digite sua senha"  SIZE="10" MAXLENGTH="10" REQUIRED  /> 
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-md-2">
+          <select class="form-control" name="STATUSUSUARIO">
+            <option value=1>ATIVO</option>
+            <option value=2>INATIVO</option>
+          </select>
+        </div>
+      </div>
+      <INPUT CLASS="btn btn-danger"TYPE="SUBMIT" NAME="SUBMIT" VALUE="ENVIAR"/>
+      <br /><br />
+
+      <a href="RecuperaSenha.php"> <span> Esqueci minha senha</span></a>
+    </FORM>
+  </div>
+  		
+  </BODY>
+  </html>
